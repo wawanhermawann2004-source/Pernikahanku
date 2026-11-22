@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c32">
+<title>Wawan & Dina — Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+:root{--green:#123c32;--deep:#09271f;--gold:#c9a96e;--cream:#f4efdf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--deep);color:var(--cream);font-family:Montserrat,Arial,sans-serif;font-weight:300}
+.cover{min-height:100svh;display:grid;place-items:center;padding:28px 18px;background:radial-gradient(ellipse at center,#1b5143 0%,#123c32 48%,#09271f 100%);position:relative;overflow:hidden}
+.cover:before,.cover:after{content:"";position:absolute;inset:18px;border:1px solid rgba(201,169,110,.65);pointer-events:none}
+.cover:after{inset:25px;border:1px solid rgba(201,169,110,.25)}
+.corner{position:absolute;color:var(--gold);font-size:30px;opacity:.8}.tl{top:34px;left:34px}.tr{top:34px;right:34px}.bl{bottom:34px;left:34px}.br{bottom:34px;right:34px}
+.inner{text-align:center;max-width:650px;position:relative;z-index:1;padding:40px 12px}
+.kicker{letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-size:10px}
+h1,h2,.names{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400}
+.monogram{font-family:"Cormorant Garamond",Georgia,serif;font-size:58px;color:var(--gold);margin:25px 0 4px}
+.names{font-size:clamp(48px,10vw,78px);line-height:.95;margin:10px 0;color:#f7f0df}
+.amp{font-style:italic;color:var(--gold);font-size:.72em}
+.rule{width:90px;height:1px;background:var(--gold);margin:28px auto}
+.date{font-size:12px;letter-spacing:.18em;color:#e6d7b7}
+.scroll{display:inline-block;margin-top:48px;color:var(--gold);font-size:10px;letter-spacing:.2em;text-decoration:none;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:7px}
+section{padding:72px 22px;text-align:center}
+.panel{max-width:680px;margin:auto;border:1px solid rgba(201,169,110,.55);padding:38px 22px;background:rgba(18,60,50,.55)}
+h2{font-size:42px;color:var(--gold);margin:12px 0 18px}
+p{line-height:1.9;font-size:13px;color:#e6dfcf}
+.event{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;color:#f5ecd8;margin:12px}
+.meta{color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:22px}
+.countdown{display:flex;justify-content:center;gap:12px;margin:28px auto 0;flex-wrap:wrap}
+.unit{border:1px solid rgba(201,169,110,.5);padding:13px 16px;min-width:72px}
+.unit strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;color:var(--gold);font-weight:500}
+.unit span{font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+a.btn{display:inline-block;margin-top:20px;padding:13px 20px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+footer{padding:35px 20px;text-align:center;color:var(--gold);font-family:"Cormorant Garamond",Georgia,serif;font-size:24px}
+.small{font-size:10px;letter-spacing:.1em;color:#b8b09e}
+</style>
+</head>
+<body>
+<header class="cover">
+  <span class="corner tl">❧</span><span class="corner tr">❧</span><span class="corner bl">❧</span><span class="corner br">❧</span>
+  <div class="inner">
+    <div class="kicker">The Wedding Invitation</div>
+    <div class="monogram">W <span class="amp">&</span> D</div>
+    <div class="rule"></div>
+    <div class="names">Wawan<br><span class="amp">&</span><br>Dina</div>
+    <div class="rule"></div>
+    <div class="date">MINGGU · 17 JANUARI 2027</div>
+    <a class="scroll" href="#invitation">Buka Undangan ↓</a>
+  </div>
+</header>
+<main id="invitation">
+<section>
+  <div class="panel">
+    <div class="kicker">Dengan penuh kebahagiaan</div>
+    <h2>You're Invited</h2>
+    <p>Dengan memohon rahmat dan berkah Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada hari bahagia kami.</p>
+    <div class="event">Wawan Hermawan<br><span class="amp">&</span><br>Dina Agustina</div>
+    <div class="rule"></div>
+    <div class="meta">Hari & Tanggal</div>
+    <p>Minggu, 17 Januari 2027</p>
+    <div class="meta">Tempat</div>
+    <p>Chandra Wilwatikta<br>Pandaan, Pasuruan</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Chandra+Wilwatikta+Pandaan" target="_blank" rel="noopener">Lihat Lokasi</a>
+  </div>
+</section>
+<section>
+  <div class="kicker">Menuju hari bahagia</div>
+  <h2>Save the Date</h2>
+  <p>Dengan penuh rasa syukur, kami menantikan kehadiran dan doa restu Anda.</p>
+  <div class="countdown" aria-label="Hitung mundur">
+    <div class="unit"><strong id="days">—</strong><span>Hari</span></div>
+    <div class="unit"><strong id="hours">—</strong><span>Jam</span></div>
+    <div class="unit"><strong id="minutes">—</strong><span>Menit</span></div>
+    <div class="unit"><strong id="seconds">—</strong><span>Detik</span></div>
+  </div>
+</section>
+</main>
+<footer>
+  Wawan <span class="amp">&</span> Dina
+  <div class="small">Terima kasih atas doa dan restunya</div>
+</footer>
+<script>
+const target = new Date('2027-01-17T00:00:00+07:00').getTime();
+function tick(){
+  let diff=Math.max(0,target-Date.now());
+  const vals={days:Math.floor(diff/86400000),hours:Math.floor(diff%86400000/3600000),minutes:Math.floor(diff%3600000/60000),seconds:Math.floor(diff%60000/1000)};
+  Object.entries(vals).forEach(([id,v])=>document.getElementById(id).textContent=String(v).padStart(2,'0'));
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
